@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpg" href="public/logo_sparrow.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Captain Sparrow</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="public/logo_sparrow.jpg"
+          alt="Logo"
+        />
+        <h1>Black Pearl</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>On board</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you want to come aboard, meet me in Tortuga.</p>
+        <button onclick="openGoogleMaps()">Get Directions</button>
+      </div>
+    </main>
+
+    <script>
+      function openGoogleMaps() {
+        window.open('https://www.google.fr/maps/place/Île+de+la+Tortue/@20.0411699,-72.8778767,12z/data=!3m1!4b1!4m6!3m5!1s0x8eb6635255465279:0x57de6eda0fe30d8a!8m2!3d20.0548685!4d-72.7924612!16zL20vMDJ6N3Yy?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D', '_blank');
+      }
+    </script>
+  </body>
+</html>

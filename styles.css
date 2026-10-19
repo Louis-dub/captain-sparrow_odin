@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&family=RocknRoll+One&display=swap');
+
+:root {
+    --background: #1A191B;
+    --interactive: #2B292D;
+    --border: #43484E;
+    --solid: #6F6D78;
+    --text: #B5B2BC;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "RocknRoll One";
+    color: var(--text);
+}
+
+header {
+    background-color: var(--interactive);
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+header img {
+    height: 6rem;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    font-size: 2rem;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--background);
+    min-height: 85vh;
+}
+
+/* Home Page */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    font-size: 3rem;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.home button {
+    cursor: pointer;
+    width: 20%;
+    height: 5vh;
+    background-color: var(--interactive);
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    font-size: 2rem;
+    font-family: "RocknRoll One", sans-serif;
+    color: var(--text);
+    transition: transform 0.3 ease-in-out;
+}
+
+.home button:hover {
+    color: var(--interactive);
+    background-color: var(--text);
+}
+
+.home button:active {
+    transform: scale(0.9);
+}
